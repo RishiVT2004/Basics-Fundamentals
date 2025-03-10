@@ -1,0 +1,67 @@
+1. Java is an Object Oriented Programming Language 
+2. It is a write once run anywhere capability , ie platform independent (only jvm needs to be installed)
+3. JDK -> java development kit (contains JVM,JRE) , contains tools for writing java like javac compiler , debugger , etc 
+4. JRE -> java runtime environment , helps to run java application in computers , contains core classes(Strings , ArrayListList , etc.)
+          and other supporting classes , but no development tools
+          **contains JVM
+          
+          ** JRE can be installed without JDK , as JRE is used to run java programs , wihle JDK is used to 
+          develop tools
+5. JVM -> it is the actual enfine used to run java bytecode in a platform 
+6. Source Code -> .java(writing code) , .class(jvm compiles .java code into bytecode and stores in .class , used by JVM)
+
+7. Java is a OOP language as 
+    * Java is an object-oriented programming (OOP) language because it is based on the concept of objects that '
+      encapsulate data (fields/attributes) and behavior (methods). It follows key OOP principles
+    * Since everything in Java is defined using classes and objects, it is considered a 
+    object-oriented language (not pure as it contains primitive types, which are not objects).
+
+test.java -> compiler -> bytecode(platform independent) -> JVM -> machine code (platform dependent)
+
+** rm *.class -> remove .class in code 
+
+8. use of ; -> compiler interprets it as end of a line 
+
+** 8 bits => 1 byte 
+
+9. Datatypes in Java 
+   a] Integral Types : 
+        1. Byte (range -: 128 -> 127) [8 bits] 
+        2. Short (range -: -2^16 -> 2^16 - 1) [16 bits]
+        3. Int (32 bits)
+        4. Long (64 bits)  * ends with l 
+    * int -> primitive data type , Integer -> Class 
+    b] Decimal Types : 
+        1. Float (4 bytes) -> gives 7 significant digits , then rounds up ** ends with f 
+        2. Double (8 bytes) -> gives 15 significant digits , then rounds up 
+    c] Boolean Type : 
+        1. boolean : true(1) / false(0);(1 bit)
+    d] Characters : 
+        1. char ('') : min : 0 , max : 65535
+        * has int value ascociated to each char (ASCII)
+            * (a - z) : 97 - 122 
+            * (A - Z) : 65 - 90
+
+** new -> use for obect creation 
+** memory space for obj creation in jvm -> heap memory(contains string pool)
+
+10. String -> it is a class , string pools store string in pool and stores string names 
+    
+    String x1 = "String"; // literal declatation 
+    String x2 = new String("String"); // constructor declaration
+
+   x1 == x2 -> used to compare references of string 
+   x1.equals(x2) -> used to compare values of string 
+
+   Strings are IMMUTABLE
+
+   String x1 = 'string'
+   String x2 = x1.toUpperCase() / x1.toLowerCase() , stored in new string 
+
+   .charAt(index) -> char based on 0-based index 
+   .length()
+   .contains(substring) -> check if string contains the given substring  
+   .substring(0,n) -> substring containing indexes(0,n-1)
+   .replace(s1,s2) -> replace all s1 strings with s2
+
+** Integer values are stored in stack memory
